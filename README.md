@@ -13,9 +13,7 @@ Execute the provided script [run-docker.sh](run-docker.sh) or run directly the f
 
  *Without docker*:
  
- Build and generate the artifact file with the maven command    
- `mvn clean package` and then run the maven spring boot plugin     
- `mvn spring-boot:run` (or the java command     
- `java -jar <jar file location>`).  
+ Build and generate the artifact file with the maven command `mvn clean package` and then run the maven spring boot plugin     
+ `mvn spring-boot:run` (or the java command `java -jar <jar file location>`).  
    
 The application will be accessible at [http:localhost:8080](http:localhost:8080) (not that the configured application context path is /api).
