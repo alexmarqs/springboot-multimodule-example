@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>example.api</groupId>
+	<artifactId>app</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>It's a simple example of a multi module project</description>
+
+	<properties>
+		<!-- shared parent properties -->
+		<java.version>1.8</java.version>
+		<swagger.version>2.9.2</swagger.version>
+		<mail.version>1.0-SNAPSHOT</mail.version>
+		<security.version>1.0-SNAPSHOT</security.version>
+	</properties>
+
+	<dependencyManagement>	 
+		<dependencies>
+      		<!-- dependencies available and shared between the child modules -->
+      		<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			 <dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>web</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>example.mail</groupId>
+				<artifactId>mail-lib</artifactId>
+				<version>${mail.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>example.security</groupId>
+				<artifactId>security-lib</artifactId>
+				<version>${security.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+    	</dependencies>
+	</dependencyManagement>
+
+ 	<modules>
+		<module>mail-lib</module>     <!-- mail library example to provide mail services that can be used in another projects -->
+		<module>security-lib</module> <!-- security library example to provide security services that can be used in another projects -->
+        <module>common</module>       <!-- dto, api interfaces, any other common data -->
+        <module>core</module> 	      <!-- repositories, entities, business logic, mappers, etc -->
+        <module>web</module>          <!-- web app boot with the rest controllers, etc -->
+	</modules>
+    
+</project>

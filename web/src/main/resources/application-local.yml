@@ -1,0 +1,15 @@
+logging:
+  level:
+    example.api: DEBUG
+
+# Mail settings
+mail:
+  default-subject: Test subject
+
+# Swagger settings
+swagger:
+  enabled: true
+
+# Security settings
+security:
+  enabled: true

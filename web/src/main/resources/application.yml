@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  profiles:
+    active: local
+
+logging:
+  level:
+    root: INFO
+
+# Swagger settings
+swagger:
+  enabled: false
+
+# Security settings
+  security:
+    enabled: true
