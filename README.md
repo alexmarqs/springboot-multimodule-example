@@ -6,7 +6,7 @@ This project shows you how can you modularize a Spring Boot application and how 
 - Maven      
 - Docker  
       
-### Build and run Instructions to build and run the example locally     
+### Instructions to build and run the example locally     
 *With docker*: 
 
 Execute the provided script [run-docker.sh](run-docker.sh) or run directly the following commands to build and run the docker image:  `docker build -t app-example-image . && docker run --name app-example-container -p 8080:8080 app-example-image`   
