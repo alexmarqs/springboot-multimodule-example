@@ -26,6 +26,8 @@ public class MailConfiguration {
     }*/
 
     /*@Bean -> alternative a)
+    @Validated
+    @ConfigurationProperties(prefix = "mail")
     public MailProperties mailProperties(){
         return new MailProperties();
     }*/

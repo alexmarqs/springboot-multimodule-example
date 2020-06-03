@@ -5,6 +5,9 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.NotEmpty;
 
 /**
  * The type Mail properties.
@@ -18,13 +21,13 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 @ToString
-//@Validated
+@Validated
 public class MailProperties {
 
     /**
      * The Default subject.
      */
-    //@NotEmpty
+    @NotEmpty
     private String defaultSubject;
 
 }

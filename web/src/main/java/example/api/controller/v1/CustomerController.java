@@ -1,4 +1,4 @@
-package example.api.web.controller.v1;
+package example.api.controller.v1;
 
 import example.mail.MailService;
 import io.swagger.annotations.Api;
