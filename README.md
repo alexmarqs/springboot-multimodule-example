@@ -46,3 +46,9 @@ The application will be accessible at [http:localhost:8080](http:localhost:8080)
 [https://reflectoring.io/spring-boot-starter/](https://reflectoring.io/spring-boot-starter/)
 
 [https://reflectoring.io/spring-boot-modules/](https://reflectoring.io/spring-boot-modules/)
+
+[https://www.baeldung.com/spring-boot-configuration-metadata](https://www.baeldung.com/spring-boot-configuration-metadata)
+
+[https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-configuration-metadata.html#configuration-metadata-annotation-processor](https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-configuration-metadata.html#configuration-metadata-annotation-processor)
+
+[https://plugins.jetbrains.com/plugin/10229-spring-assistant](https://plugins.jetbrains.com/plugin/10229-spring-assistant)
